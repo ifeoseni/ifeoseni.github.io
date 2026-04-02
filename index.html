@@ -1,332 +1,577 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ifeoluwa Daniel Oseni - Software Engineer</title>
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Ifeoluwa Daniel Oseni is a seasoned Software Engineer with 5+ years of experience in Laravel, PHP, JavaScript, and web development.">
-    <meta name="keywords" content="Software Engineer, Laravel Developer, PHP Developer, Ifeoluwa Oseni, Web Developer Nigeria, Full Stack Developer">
-    <meta name="author" content="Ifeoluwa Daniel Oseni">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="Ifeoluwa Daniel Oseni - Software Engineer">
-    <meta property="og:description" content="Experienced Software Engineer specializing in Laravel, JavaScript, and scalable web applications.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourwebsite.com">
-    <meta property="og:image" content="https://yourwebsite.com/profile-image.jpg">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ifeoluwa Daniel Oseni - Software Engineer">
-    <meta name="twitter:description" content="Experienced Software Engineer specializing in Laravel, JavaScript, and scalable web applications.">
-    <meta name="twitter:image" content="https://yourwebsite.com/profile-image.jpg">
-
-    <!-- Structured Data with JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ifeoluwa Daniel Oseni",
-      "jobTitle": "Software Engineer",
-      "url": "https://yourwebsite.com",
-      "email": "mailto:ifeoseni@gmail.com",
-      "telephone": "+2348175461196",
-      "sameAs": [
-        "https://www.linkedin.com/in/ifeoluwaoseni",
-        "https://github.com/ifeoseni"
-      ],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Risk Control Services Nigeria"
-      }
-    }
-    </script>
-
-    <!-- Tailwind & FontAwesome -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ifeoluwa Daniel Oseni | Software Engineer</title>
+    <meta name="description" content="Software Engineer specializing in scalable backend systems, cybersecurity, and data science.">
+    
+    <!-- SEO & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind for utilities, but we'll use custom premium CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" />
 
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 1000px;
-        }
-        .section {
-            margin-bottom: 2rem;
-        }
-        .experience-item {
-            margin-bottom: 1.5rem;
-        }
-        .skill-badge {
-            transition: transform 0.2s;
-        }
-        .skill-badge:hover {
-            transform: translateY(-3px);
-        }
-        .header-gradient {
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-        }
-    </style>
-</head>
+      :root {
+        --primary: #6366f1;
+        --primary-dark: #4f46e5;
+        --secondary: #0ea5e9;
+        --accent: #f43f5e;
+        --bg: #030712;
+        --card-bg: rgba(17, 24, 39, 0.7);
+        --glass-border: rgba(255, 255, 255, 0.08);
+        --text-main: #f3f4f6;
+        --text-muted: #9ca3af;
+      }
 
-<body class="bg-gray-50">
-    <!-- Header Section -->
-    <header class="header-gradient text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div>
-                    <h1 class="text-4xl font-bold mb-2">Ifeoluwa Daniel Oseni</h1>
-                    <h2 class="text-2xl">Software Engineer</h2>
-                </div>
-                <div class="mt-6 md:mt-0">
-                    <a href="mailto:ifeoseni@gmail.com" class="inline-block mr-4 hover:text-blue-200">
-                        <i class="fas fa-envelope mr-2"></i>ifeoseni@gmail.com
-                    </a>
-                    <a href="tel:+2348175461196" class="inline-block mr-4 hover:text-blue-200">
-                        <i class="fas fa-phone mr-2"></i>+234-817-546-1196
-                    </a>
-                </div>
-            </div>
-            <div class="flex mt-4">
-                <a href="https://www.github.com/ifeoseni" target="_blank" class="mr-4 hover:text-blue-200">
-                    <i class="fab fa-github mr-2"></i>github.com/ifeoseni
-                </a>
-                <a href="https://www.linkedin.com/in/ifeoluwaoseni" target="_blank" class="hover:text-blue-200">
-                    <i class="fab fa-linkedin mr-2"></i>linkedin.com/in/ifeoluwaoseni
-                </a>
-            </div>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: var(--bg);
+        color: var(--text-main);
+        overflow-x: hidden;
+      }
+
+      h1, h2, h3, h4 {
+        font-family: 'Outfit', sans-serif;
+      }
+
+      /* Premium Background */
+      .bg-ambient {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background: radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                    radial-gradient(circle at 100% 100%, rgba(14, 165, 233, 0.1) 0%, transparent 40%),
+                    radial-gradient(circle at 50% 50%, rgba(244, 63, 94, 0.05) 0%, transparent 50%);
+      }
+
+      .glass {
+        background: var(--card-bg);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      }
+
+      .hero-gradient {
+        background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .section-reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .section-reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .experience-card {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .experience-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(99, 102, 241, 0.4);
+        box-shadow: 0 0 30px rgba(99, 102, 241, 0.15);
+      }
+
+      .experience-card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.03), transparent);
+        transition: 0.5s;
+      }
+
+      .experience-card:hover::after {
+        left: 100%;
+      }
+
+      .badge-glow {
+        box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+      }
+
+      .timeline-dot {
+        position: absolute;
+        left: -41px;
+        top: 0;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: var(--primary);
+        box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+        z-index: 10;
+      }
+
+      .timeline-line {
+        position: absolute;
+        left: -35px;
+        top: 20px;
+        bottom: -40px;
+        width: 2px;
+        background: linear-gradient(to bottom, var(--primary), transparent);
+      }
+
+      .animated-border {
+        position: relative;
+      }
+
+      .animated-border::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1.5px;
+        background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+        background-size: 300% 100%;
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        animation: borderRotate 4s linear infinite;
+        opacity: 0.5;
+      }
+
+      @keyframes borderRotate {
+        0% { background-position: 0% 0%; }
+        100% { background-position: 100% 0%; }
+      }
+
+      .floating {
+        animation: floating 3s ease-in-out infinite;
+      }
+
+      @keyframes floating {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+
+      .skill-pill {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .skill-pill:hover {
+        background: var(--primary);
+        color: white;
+        transform: scale(1.05);
+        border-color: transparent;
+      }
+
+      @media (max-width: 1024px) {
+        .timeline-line, .timeline-dot {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bg-ambient"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-opacity-10 py-4 px-6 md:px-12 flex justify-between items-center">
+      <div class="text-xl font-bold tracking-tight">I F E O S E N I</div>
+      <div class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="#experience" class="hover:text-primary transition-colors">EXPERIENCE</a>
+        <a href="#platforms" class="hover:text-primary transition-colors">PROJECTS</a>
+        <a href="#skills" class="hover:text-primary transition-colors">TECH STACK</a>
+        <a href="#education" class="hover:text-primary transition-colors">EDUCATION</a>
+        <a href="#membership" class="hover:text-primary transition-colors">MEMBERSHIP</a>
+      </div>
+      <a href="mailto:ifeoseni@gmail.com" class="glass px-5 py-2 rounded-full text-base font-bold hover:bg-white hover:text-black transition-all">HIRE ME</a>
+    </nav>
+
+    <header class="pt-40 pb-20 px-6 max-w-7xl mx-auto text-center">
+      <div class="inline-block glass px-4 py-1.5 rounded-full text-base font-bold text-primary mb-6 tracking-widest uppercase">Available for New Opportunities</div>
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold hero-gradient mb-8 leading-tight">
+        Ifeoluwa Oseni
+      </h1>
+      <p class="text-xl md:text-2xl text-text-muted max-w-3xl mx-auto font-light leading-relaxed mb-12">
+        Software Engineer architecting <span class="text-white font-medium">resilient backend systems</span>, <span class="text-white font-medium">high-performance APIs</span>, and secure digital infrastructures.
+      </p>
+      
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <div class="glass p-6 rounded-2xl flex flex-col items-center">
+          <span class="text-3xl font-bold text-white mb-1">100+</span>
+          <span class="text-base text-text-muted font-bold tracking-widest uppercase">RESTful APIs</span>
         </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center">
+          <span class="text-3xl font-bold text-white mb-1">98%</span>
+          <span class="text-base text-text-muted font-bold tracking-widest uppercase">Test Coverage</span>
+        </div>
+        <div class="glass p-6 rounded-2xl flex flex-col items-center">
+          <span class="text-3xl font-bold text-white mb-1">5+</span>
+          <span class="text-base text-text-muted font-bold tracking-widest uppercase">Platforms Launched</span>
+        </div>
+      </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-8">
-        <!-- Professional Summary -->
-        <section class="section">
-            <h2 class="text-2xl font-bold mb-4 text-blue-700 border-b-2 border-blue-700 pb-2">Professional Summary</h2>
-            <p class="text-lg">
-                Software Engineer with over 5 years of working experience specializing in web development. 
-                Skilled in a wide range of technologies including Laravel, PHP, JavaScript, Bootstrap, CSS, Git, and SQL, 
-                with a foundational understanding of Artificial Intelligence, including Expert Systems, Machine Learning, 
-                and Generative AI.
-            </p>
-        </section>
+    <main class="max-w-7xl mx-auto px-6 pb-24">
+      
+      <!-- Primary Experience Group -->
+      <section id="experience" class="section-reveal py-20">
+        <div class="flex items-center gap-4 mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold">Strategic Impact</h2>
+          <div class="h-px flex-grow bg-gradient-to-r from-primary to-transparent opacity-30"></div>
+        </div>
 
-        <!-- Skills Section -->
-        <section class="section">
-            <h2 class="text-2xl font-bold mb-4 text-blue-700 border-b-2 border-blue-700 pb-2">Technical Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
-                <div class="skill-badge bg-blue-100 rounded-lg p-3 text-center shadow-sm">
-                    <i class="fab fa-php text-blue-600 text-2xl mb-2"></i>
-                    <p class="font-semibold">PHP</p>
-                </div>
-                <div class="skill-badge bg-blue-100 rounded-lg p-3 text-center shadow-sm">
-                    <i class="fab fa-laravel text-red-600 text-2xl mb-2"></i>
-                    <p class="font-semibold">Laravel</p>
-                </div>
-                <div class="skill-badge bg-blue-100 rounded-lg p-3 text-center shadow-sm">
-                    <i class="fab fa-js text-yellow-500 text-2xl mb-2"></i>
-                    <p class="font-semibold">JavaScript</p>
-                </div>
-                <div class="skill-badge bg-blue-100 rounded-lg p-3 text-center shadow-sm">
-                    <i class="fab fa-bootstrap text-purple-600 text-2xl mb-2"></i>
-                    <p class="font-semibold">Bootstrap</p>
-                </div>
-                <div class="skill-badge bg-blue-100 rounded-lg p-3 text-center shadow-sm">
-                    <i class="fab fa-css3-alt text-blue-600 text-2xl mb-2"></i>
-                    <p class="font-semibold">CSS</p>
-                </div>
-                <div class="skill-badge bg-blue-100 rounded-lg p-3 text-center shadow-sm">
-                    <i class="fab fa-git-alt text-orange-600 text-2xl mb-2"></i>
-                    <p class="font-semibold">Git</p>
-                </div>
-                <div class="skill-badge bg-blue-100 rounded-lg p-3 text-center shadow-sm">
-                    <i class="fas fa-database text-blue-600 text-2xl mb-2"></i>
-                    <p class="font-semibold">SQL</p>
-                </div>
-                <div class="skill-badge bg-blue-100 rounded-lg p-3 text-center shadow-sm">
-                    <i class="fab fa-html5 text-red-600 text-2xl mb-2"></i>
-                    <p class="font-semibold">HTML</p>
-                </div>
+        <div class="grid lg:grid-cols-2 gap-8">
+          <!-- AILead Technologies -->
+          <article class="experience-card glass p-8 md:p-10 rounded-[2.5rem]">
+            <div class="flex justify-between items-start mb-6">
+              <div class="p-4 bg-indigo-500 bg-opacity-10 rounded-2xl">
+                <i class="fa-solid fa-microchip text-2xl text-indigo-400"></i>
+              </div>
+              <span class="text-base font-bold text-text-muted tracking-widest uppercase">Feb 2026 — Present</span>
             </div>
-        </section>
+            <h3 class="text-2xl font-bold mb-1">Software Developer</h3>
+            <p class="text-primary font-bold mb-6">AILead Technologies</p>
+            <ul class="space-y-4 text-text-muted leading-relaxed mb-8">
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-primary mt-1.5 text-base"></i>
+                <span>Architected the backend for <span class="text-white font-medium">KidsCode LMS</span>, implementing a modular Laravel-based architecture supporting complex student learning flows.</span>
+              </li>
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-primary mt-1.5 text-base"></i>
+                <span>Engineered and optimized 100+ RESTful API endpoints with robust security, versioning, and rate-limiting.</span>
+              </li>
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-primary mt-1.5 text-base"></i>
+                <span>Designed an automated <span class="text-white font-medium">Badge & Point System</span> with complex reward logic based on lesson, quiz, and coding challenge mastery.</span>
+              </li>
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-primary mt-1.5 text-base"></i>
+                <span>Achieved high reliability through rigorous <span class="text-white font-medium">TDD (Test-Driven Development)</span> using Pest and PHPUnit.</span>
+              </li>
+            </ul>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-white bg-opacity-5 text-[10px] font-bold tracking-widest uppercase">Laravel</span>
+              <span class="px-3 py-1 rounded-full bg-white bg-opacity-5 text-[10px] font-bold tracking-widest uppercase">Pest</span>
+              <span class="px-3 py-1 rounded-full bg-white bg-opacity-5 text-[10px] font-bold tracking-widest uppercase">OAuth 2.0</span>
+              <span class="px-3 py-1 rounded-full bg-white bg-opacity-5 text-[10px] font-bold tracking-widest uppercase">MySQL</span>
+            </div>
+          </article>
 
-        <!-- Work Experience -->
-        <section class="section">
-            <h2 class="text-2xl font-bold mb-4 text-blue-700 border-b-2 border-blue-700 pb-2">Work Experience</h2>
-            
-            <div class="experience-item bg-white p-6 rounded-lg shadow-sm">
-                <div class="flex flex-col md:flex-row justify-between mb-2">
-                    <h3 class="text-xl font-bold">Lead Software Engineer</h3>
-                    <div class="text-gray-600">
-                        <span class="italic">Risk Control Services Nigeria</span>
-                        <span class="ml-2">June 2022 to Present</span>
-                    </div>
-                </div>
-                <ul class="list-disc pl-6">
-                    <li>Developed, tested, and optimized API endpoints, enabling seamless third-party integrations.</li>
-                    <li>Authored detailed software specification documents and contributed to software design, development, and final testing to ensure high-quality deliverables.</li>
-                    <li>Led Quality Assurance efforts, testing new features and updates for functionality, reliability, and user alignment.</li>
-                    <li>Implemented Git workflows to streamline code deployments, reducing deployment time by 30%.</li>
-                    <li>Managed and maintained blogs for company platforms, increasing user engagement by 20%.</li>
-                    <li>Provided technical support and training, resolving 100% of technical issues within 24 hours.</li>
-                </ul>
+          <!-- Delon Nigeria Jobs -->
+          <article class="experience-card glass p-8 md:p-10 rounded-[2.5rem]">
+            <div class="flex justify-between items-start mb-6">
+              <div class="p-4 bg-emerald-500 bg-opacity-10 rounded-2xl">
+                <i class="fa-solid fa-briefcase text-2xl text-emerald-400"></i>
+              </div>
+              <span class="text-base font-bold text-text-muted tracking-widest uppercase">June 2025 — July 2025</span>
             </div>
-            
-            <div class="experience-item bg-white p-6 rounded-lg shadow-sm mt-4">
-                <div class="flex flex-col md:flex-row justify-between mb-2">
-                    <h3 class="text-xl font-bold">Website Administrator</h3>
-                    <div class="text-gray-600">
-                        <span class="italic">L&T Superstores</span>
-                        <span class="ml-2">June 2021 to April 2022</span>
-                    </div>
-                </div>
-                <ul class="list-disc pl-6">
-                    <li>Managed and updated the company's eCommerce platform, optimizing and uploading 400+ products on WooCommerce within three months of launch.</li>
-                    <li>Worked alongside the Senior Developer to enhance product SEO, boosting online visibility.</li>
-                    <li>Oversaw the company's LinkedIn page, strengthening its digital presence and engagement.</li>
-                </ul>
+            <h3 class="text-2xl font-bold mb-1">Software Engineer</h3>
+            <p class="text-emerald-400 font-bold mb-6">Delon Nigeria Jobs</p>
+            <ul class="space-y-4 text-text-muted leading-relaxed mb-8">
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-emerald-400 mt-1.5 text-base"></i>
+                <span>Executed the architectural <span class="text-white font-medium">migration of Delon Health</span> from WordPress to a custom Laravel ecosystem.</span>
+              </li>
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-emerald-400 mt-1.5 text-base"></i>
+                <span>Resolved critical SMTP issues, ensuring 99.9% email deliverability across all corporate domains.</span>
+              </li>
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-emerald-400 mt-1.5 text-base"></i>
+                <span>Optimized database schemas to handle job applications with decreased latency.</span>
+              </li>
+            </ul>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-white bg-opacity-5 text-[10px] font-bold tracking-widest uppercase">Migration</span>
+              <span class="px-3 py-1 rounded-full bg-white bg-opacity-5 text-[10px] font-bold tracking-widest uppercase">Laravel</span>
+              <span class="px-3 py-1 rounded-full bg-white bg-opacity-5 text-[10px] font-bold tracking-widest uppercase">SMTP Opt</span>
             </div>
-            
-            <div class="experience-item bg-white p-6 rounded-lg shadow-sm mt-4">
-                <div class="flex flex-col md:flex-row justify-between mb-2">
-                    <h3 class="text-xl font-bold">Business Development Manager</h3>
-                    <div class="text-gray-600">
-                        <span class="italic">Meridian 74 Group</span>
-                        <span class="ml-2">Nov 2020 to Feb 2021</span>
-                    </div>
-                </div>
-                <ul class="list-disc pl-6">
-                    <li>Researched and identified potential clients seeking business opportunities in Nigeria.</li>
-                    <li>Authored six high-quality articles on the Nigerian market, published on the company website.</li>
-                    <li>Generated over 100 quality business leads for company partners, enhancing market expansion efforts.</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item bg-white p-6 rounded-lg shadow-sm mt-4">
-                <div class="flex flex-col md:flex-row justify-between mb-2">
-                    <h3 class="text-xl font-bold">Graduate Technical Intern</h3>
-                    <div class="text-gray-600">
-                        <span class="italic">TechBridge Consulting</span>
-                        <span class="ml-2">May 2020 to August 2020</span>
-                    </div>
-                </div>
-                <ul class="list-disc pl-6">
-                    <li>Developed an automated WhatsApp broadcast system, engaging over 1,000 users daily.</li>
-                    <li>Executed targeted email campaigns for 2,000+ subscribers, achieving a 50% average open rate and driving paid training course enrollments for 50 participants.</li>
-                </ul>
-            </div>
-        </section>
+          </article>
+        </div>
+      </section>
 
-        <!-- Projects Section -->
-        <section class="section">
-            <h2 class="text-2xl font-bold mb-4 text-blue-700 border-b-2 border-blue-700 pb-2">Featured Projects</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-bold mb-2">API Integration System</h3>
-                    <p class="text-gray-700 mb-3">Developed RESTful API endpoints that enabled third-party service integrations, improving data exchange efficiency by 40%.</p>
-                    <div class="flex flex-wrap">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2 mb-2">Laravel</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2 mb-2">PHP</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2 mb-2">RESTful API</span>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-bold mb-2">WhatsApp Broadcast System</h3>
-                    <p class="text-gray-700 mb-3">Built an automated messaging system that engaged with 1,000+ users daily, supporting marketing and customer engagement efforts.</p>
-                    <div class="flex flex-wrap">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2 mb-2">JavaScript</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2 mb-2">WhatsApp API</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2 mb-2">Automation</span>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-bold mb-2">E-Commerce Platform Optimization</h3>
-                    <p class="text-gray-700 mb-3">Enhanced and managed a WooCommerce platform, uploading and optimizing 400+ products within three months of launch.</p>
-                    <div class="flex flex-wrap">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2 mb-2">WordPress</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2 mb-2">WooCommerce</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2 mb-2">SEO</span>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-bold mb-2">Git Workflow Implementation</h3>
-                    <p class="text-gray-700 mb-3">Implemented streamlined Git workflows that reduced deployment time by 30% and improved team collaboration.</p>
-                    <div class="flex flex-wrap">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2 mb-2">Git</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2 mb-2">CI/CD</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2 mb-2">DevOps</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- Risk Control & Core Platforms Group -->
+      <section id="platforms" class="section-reveal py-20">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="h-px flex-grow bg-gradient-to-l from-secondary to-transparent opacity-30"></div>
+          <h2 class="text-3xl md:text-4xl font-bold">Enterprise Platforms</h2>
+        </div>
 
-        <!-- Education -->
-        <section class="section">
-            <h2 class="text-2xl font-bold mb-4 text-blue-700 border-b-2 border-blue-700 pb-2">Education</h2>
-            
-            <div class="bg-white p-6 rounded-lg shadow-sm mb-4">
-                <div class="flex flex-col md:flex-row justify-between mb-2">
-                    <div>
-                        <h3 class="text-xl font-bold">M.TECH Computer Science</h3>
-                        <p class="text-gray-700">Federal University of Technology, Akure</p>
-                    </div>
-                    <div class="text-gray-600">
-                        <p>Feb 2024 - Present</p>
-                        <p class="italic">Currently in the third semester</p>
-                    </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Risk Control Services (Main) -->
+          <div class="md:col-span-3 glass p-10 rounded-[2.5rem] mb-6 relative overflow-hidden">
+            <div class="grid lg:grid-cols-2 gap-10 relative z-10">
+              <div>
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-base font-bold text-secondary tracking-widest uppercase">2022 — 2025</span>
+                  <div class="h-px w-10 bg-secondary opacity-50"></div>
                 </div>
-            </div>
-            
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="flex flex-col md:flex-row justify-between mb-2">
-                    <div>
-                        <h3 class="text-xl font-bold">B.Sc Computer Science</h3>
-                        <p class="text-gray-700">University of Ibadan</p>
-                    </div>
-                    <div class="text-gray-600">
-                        <p>Graduated Feb 2020</p>
-                        <p class="italic">Second Class Upper Division</p>
-                    </div>
+                <h3 class="text-3xl font-bold mb-2">Webmaster & Backend Specialist</h3>
+                <p class="text-secondary font-bold mb-6">Risk Control Services Nigeria</p>
+                <div class="text-text-muted space-y-4 leading-relaxed mb-6">
+                  <p>Developed and delivered the <span class="text-white font-medium">RiskControlNigeria.com corporate website</span>, featuring a custom-built blog engine and comprehensive <span class="text-white font-medium">English/French bilingual architecture</span>.</p>
+                  <p>Spearheaded technical delivery for specialized risk platforms while ensuring NDPR compliance and audit readiness.</p>
                 </div>
+                <div class="flex flex-wrap gap-3">
+                  <div class="glass px-4 py-2 rounded-xl text-sm border-secondary border-opacity-20 text-white">Fullstack (Laravel)</div>
+                  <div class="glass px-4 py-2 rounded-xl text-sm border-secondary border-opacity-20">Bilingual Engine</div>
+                  <div class="glass px-4 py-2 rounded-xl text-sm border-secondary border-opacity-20">NDPR Data Compliance</div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="glass p-5 rounded-2xl border-opacity-10 hover:border-opacity-30 transition-all group">
+                   <h4 class="font-bold mb-1 group-hover:text-secondary">BcOnline</h4>
+                   <p class="text-[10px] text-text-muted mb-3 uppercase tracking-tighter">bconline.ng</p>
+                   <p class="text-base text-text-muted">Orchestrated implementation of enterprise features for core verification services.</p>
+                </div>
+                <div class="glass p-5 rounded-2xl border-opacity-10 hover:border-opacity-30 transition-all group">
+                   <h4 class="font-bold mb-1 group-hover:text-secondary text-sm">Nigeria Risk Index</h4>
+                   <p class="text-[10px] text-text-muted mb-3 uppercase tracking-tighter">nigeriariskindex.com</p>
+                   <p class="text-base text-text-muted">Developed weighted scoring algorithms for state-level risk visualization.</p>
+                </div>
+                <div class="glass p-5 rounded-2xl border-opacity-10 hover:border-opacity-30 transition-all group">
+                   <h4 class="font-bold mb-1 group-hover:text-secondary text-sm">PolyTest.ng</h4>
+                   <p class="text-[10px] text-text-muted mb-3 uppercase tracking-tighter">polytest.ng</p>
+                   <p class="text-base text-text-muted">Architected platform infrastructure supporting various certification tracks.</p>
+                </div>
+                <div class="glass p-5 rounded-2xl border-opacity-10 hover:border-opacity-30 transition-all group">
+                   <h4 class="font-bold mb-1 group-hover:text-secondary text-sm">Portal4Security</h4>
+                   <p class="text-[10px] text-text-muted mb-3 uppercase tracking-tighter">portal4security.com</p>
+                   <p class="text-base text-text-muted">Engineered critical security feature enhancements and stability patches.</p>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-secondary opacity-5 blur-[120px]"></div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Professional Memberships -->
-        <section class="section">
-            <h2 class="text-2xl font-bold mb-4 text-blue-700 border-b-2 border-blue-700 pb-2">Professional Memberships</h2>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <p class="text-lg">Association Professional Member of Cyber Security Experts Association of Nigeria (CSEAN)</p>
+      <!-- Professional Strengths -->
+      <section class="section-reveal py-20">
+        <h2 class="text-3xl font-bold mb-12">Professional Strengths</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="glass p-6 rounded-3xl">
+            <i class="fa-solid fa-comments text-primary text-xl mb-4"></i>
+            <p class="text-sm font-medium leading-relaxed">Clear technical communication and stakeholder coordination</p>
+          </div>
+          <div class="glass p-6 rounded-3xl">
+            <i class="fa-solid fa-lightbulb text-secondary text-xl mb-4"></i>
+            <p class="text-sm font-medium leading-relaxed">Strong problem solving across support, integration, and delivery work</p>
+          </div>
+          <div class="glass p-6 rounded-3xl">
+            <i class="fa-solid fa-rocket text-accent text-xl mb-4"></i>
+            <p class="text-sm font-medium leading-relaxed">Ability to move from concept to production with measurable outcomes</p>
+          </div>
+          <div class="glass p-6 rounded-3xl">
+            <i class="fa-solid fa-book text-indigo-400 text-xl mb-4"></i>
+            <p class="text-sm font-medium leading-relaxed">Experience across software delivery, operations, and documentation</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Detailed Skills Section -->
+      <section id="skills" class="section-reveal py-20">
+        <h2 class="text-3xl font-bold mb-16 text-center">Technical Mastery</h2>
+        
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Software Engineering -->
+          <div class="glass p-10 rounded-[3rem]">
+            <h3 class="text-xl font-bold mb-8 flex items-center gap-3">
+              <i class="fa-solid fa-laptop-code text-primary"></i>
+              Software Engineering
+            </h3>
+            <div class="space-y-6">
+              <div>
+                <h4 class="text-base font-bold text-text-muted uppercase tracking-widest mb-4">Backend & APIs</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">PHP / Laravel</span>
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter text-primary border-primary border-opacity-30">Pest</span>
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">MySQL / SQL</span>
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">RESTful APIs</span>
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">Postman</span>
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">Google OAuth</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-base font-bold text-text-muted uppercase tracking-widest mb-4">Frontend & Ops</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">JavaScript ES6</span>
+                  <!-- <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">Vue.js</span> -->
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">Tailwind / Bootstrap</span>
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">HTML / CSS</span>
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">Git Flow</span>
+                  <!-- <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">Docker</span> -->
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">WordPress </span>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-base font-bold text-text-muted uppercase tracking-widest mb-4">Data Science & ML</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter text-indigo-400">Machine Learning</span>
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">Data Preprocessing</span>
+                  <span class="skill-pill px-4 py-2 rounded-xl text-base font-bold uppercase tracking-tighter">xAI (SHAP)</span>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+
+          <!-- Cybersecurity -->
+          <div class="glass p-10 rounded-[3rem] border-opacity-10 border-accent">
+            <h3 class="text-xl font-bold mb-8 flex items-center gap-3">
+              <i class="fa-solid fa-shield-halved text-accent"></i>
+              Cybersecurity Skills
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-sm text-text-muted">
+                <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
+                Cybersecurity Fundamentals (CIA Triad)
+              </li>
+              <li class="flex items-center gap-3 text-sm text-text-muted">
+                <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
+                Network Analysis (Wireshark, Nmap)
+              </li>
+              <li class="flex items-center gap-3 text-sm text-text-muted">
+                <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
+                Security Governance (NDPR, IT Audits)
+              </li>
+              <li class="flex items-center gap-3 text-sm text-text-muted">
+                <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
+                Secure Software Development & API Testing
+              </li>
+              <li class="flex items-center gap-3 text-sm text-text-muted">
+                <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
+                System Admin: Kali Linux, Ubuntu, Windows
+              </li>
+              <li class="flex items-center gap-3 text-sm text-text-muted">
+                <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
+                Cloud Infrastructure (Microsoft Azure)
+              </li>
+              <li class="flex items-center gap-3 text-sm text-text-muted">
+                <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
+                Workflow Automation (Make, Zapier, Airtable)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section-reveal py-20">
+        <h2 class="text-3xl font-bold mb-12">Academic Excellence</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="glass p-8 rounded-[2rem] border-opacity-10 flex gap-6 items-start">
+            <div class="hidden sm:block p-4 bg-primary bg-opacity-10 rounded-2xl text-primary font-bold">M.Tech</div>
+            <div class="flex-grow">
+              <h3 class="text-xl font-bold mb-1">Computer Science</h3>
+              <p class="text-text-muted mb-4 leading-snug">Federal University of Technology, Akure</p>
+              <div class="flex items-center gap-3">
+                 <span class="text-base font-bold tracking-widest text-primary uppercase">2024 — 2025</span>
+                 <span class="w-1 h-1 bg-text-muted rounded-full"></span>
+                 <span class="text-base font-bold text-white uppercase">Distinction (4.83/5.00)</span>
+              </div>
+            </div>
+          </div>
+          <div class="glass p-8 rounded-[2rem] border-opacity-10 flex gap-6 items-start">
+            <div class="hidden sm:block p-4 bg-secondary bg-opacity-10 rounded-2xl text-secondary font-bold">B.Sc</div>
+            <div class="flex-grow">
+              <h3 class="text-xl font-bold mb-1">Computer Science</h3>
+              <p class="text-text-muted mb-4 leading-snug">University of Ibadan</p>
+              <div class="flex items-center gap-3">
+                 <span class="text-base font-bold tracking-widest text-secondary uppercase">2016 — 2020</span>
+                 <span class="w-1 h-1 bg-text-muted rounded-full"></span>
+                 <span class="text-base font-bold text-white uppercase">Second Class Upper (5.3 / 7.0)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Membership -->
+      <section id="membership" class="section-reveal py-20">
+        <h2 class="text-3xl font-bold mb-12 text-center">Professional Membership</h2>
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div class="glass p-6 rounded-2xl flex items-center gap-5">
+            <div class="w-12 h-12 bg-white bg-opacity-5 rounded-xl flex items-center justify-center">
+              <i class="fa-solid fa-id-card text-emerald-400"></i>
+            </div>
+            <div>
+              <p class="font-bold text-white leading-tight">Associate Member</p>
+              <p class="text-sm text-text-muted">Nigeria Computer Society (NCS)</p>
+            </div>
+          </div>
+          <div class="glass p-6 rounded-2xl flex items-center gap-5">
+            <div class="w-12 h-12 bg-white bg-opacity-5 rounded-xl flex items-center justify-center">
+              <i class="fa-solid fa-shield-check text-blue-400"></i>
+            </div>
+            <div>
+              <p class="font-bold text-white leading-tight">Professional Member</p>
+              <p class="text-sm text-text-muted">Cyber Security Experts Association of Nigeria</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Footer -->
+      <section id="contact" class="section-reveal pt-20 pb-10">
+        <div class="glass rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+          <div class="absolute inset-0 bg-ambient opacity-50"></div>
+          <div class="relative z-10">
+             <h2 class="text-4xl md:text-6xl font-extrabold mb-8">Let's build<br>the future.</h2>
+             <p class="text-text-muted max-w-xl mx-auto mb-12 text-lg">Accepting software engineering roles & technical security consultancies.</p>
+             <div class="flex flex-col md:flex-row justify-center gap-6 mb-16">
+               <a href="mailto:ifeoseni@gmail.com" class="glass px-8 py-4 rounded-full font-bold hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3">
+                 <i class="fa-solid fa-envelope"></i> ifeoseni@gmail.com
+               </a>
+               <a href="https://linkedin.com/in/ifeoluwaoseni" target="_blank" class="glass px-8 py-4 rounded-full font-bold hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3">
+                 <i class="fa-brands fa-linkedin"></i> linkedin.com/in/ifeoluwaoseni
+               </a>
+             </div>
+             <p class="text-[10px] text-text-muted font-bold tracking-[0.4em] uppercase opacity-50">Design with AI &bull; © 2026 IFEOLUWA OSENI</p>
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-blue-800 text-white py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p class="mb-2">Ifeoluwa Daniel Oseni - Software Engineer</p>
-            <div class="flex justify-center space-x-4">
-                <a href="mailto:ifeoseni@gmail.com" class="hover:text-blue-200">
-                    <i class="fas fa-envelope mr-1"></i>ifeoseni@gmail.com
-                </a>
-                <a href="https://www.github.com/ifeoseni" target="_blank" class="hover:text-blue-200">
-                    <i class="fab fa-github mr-1"></i>github.com/ifeoseni
-                </a>
-                <a href="https://www.linkedin.com/in/ifeoluwaoseni" target="_blank" class="hover:text-blue-200">
-                    <i class="fab fa-linkedin mr-1"></i>linkedin.com/in/ifeoluwaoseni
-                </a>
-            </div>
-            <p class="mt-4 text-sm">© 2024 Ifeoluwa Daniel Oseni. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+    <script>
+      // Scroll Reveal Animation
+      const observerOptions = {
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.section-reveal').forEach(el => observer.observe(el));
+
+      // Header Parallax
+      window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const hero = document.querySelector('header');
+        hero.style.transform = `translateY(${scrolled * 0.15}px)`;
+      });
+    </script>
+  </body>
 </html>
